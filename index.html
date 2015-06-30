@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sortable Flickr API</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body ng-app="SortableFlickrApi">
+
+
+
+		<div ng-controller="flickrApi">
+			<!-- print out pics -->
+			<div ng-repeat="pic in pics.items">
+				<img src="{{ pic.media.m }}" />
+			</div>
+		</div>
+		
+
+
+	   <!-- JQuery & Bootstrap -->
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   <script src="js/bootstrap.min.js"></script>
+	   <!-- Angular -->
+	   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+	   <script src="js/script.js"></script>
+	   <script src="js/controllers/MainController.js"></script>
+	   <script src="js/services/MainServices.js"></script>
+	</body>
+</html>

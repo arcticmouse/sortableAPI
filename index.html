@@ -15,9 +15,9 @@
 
 
 		<div ng-controller="flickrApi">
-			<!-- print out pics -->
-			<div ng-repeat="pic in pics.items">
-				<img src="{{ pic.media.m }}" />
+			<!-- print out tags -->
+			<div ng-repeat="pic in pics.photos.photo">
+				{{ pic.id }}
 			</div>
 		</div>
 		
@@ -31,6 +31,5 @@
 	   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
 	   <script src="js/script.js"></script>
 	   <script src="js/controllers/MainController.js"></script>
-	   <script src="js/services/MainServices.js"></script>
 	</body>
 </html>

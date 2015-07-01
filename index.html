@@ -15,9 +15,11 @@
 
 
 		<div ng-controller="flickrApi">
-			<!-- print out tags -->
+			<!-- print out images with titles and tags -->
 			<div ng-repeat="pic in pics.photos.photo">
-				{{ pic.id }}
+				<img src="https://farm{{ pic.farm-id }}.staticflickr.com/{{ pic.server-id }}/{{ pic.id }}_{{ pic.secret }}.jpg" />
+
+				{{ pic.title }}
 			</div>
 		</div>
 		
